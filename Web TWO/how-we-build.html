@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Build | AIVIBEDEV Technical Architecture</title>
+  <meta name="description" content="Our technology stack explained in business terms: LangChain, LangGraph, n8n, web standards, and our minimalist engineering principles.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AIVIBEDEV Home">
+        <span class="brand-mark">AV</span>
+        <div>
+          <span>AIVIBEDEV</span>
+          <span class="brand-subtext">AI Product Studio</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="interactive-demo.html" class="nav-link">Interactive Demo</a></li>
+          <li><a href="how-we-build.html" class="nav-link active">How We Build</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing &amp; Scope</a></li>
+          <li><a href="proof.html" class="nav-link">Measurement</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Discuss your workflow</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <a href="solutions.html" class="mobile-nav-link">Solutions</a>
+      <a href="interactive-demo.html" class="mobile-nav-link">Interactive Demo</a>
+      <a href="how-we-build.html" class="mobile-nav-link">How We Build</a>
+      <a href="process.html" class="mobile-nav-link">Process</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Scope</a>
+      <a href="proof.html" class="mobile-nav-link">Measurement Framework</a>
+      <a href="faq.html" class="mobile-nav-link">FAQ</a>
+      <a href="contact.html" class="btn btn-primary btn-block mt-2">Discuss your workflow</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-bottom: var(--space-xl);">
+      <div class="container container-narrow text-center">
+        <div class="eyebrow">Architecture &amp; Engineering</div>
+        <h1 class="section-title">The technology stack explained in business terms</h1>
+        <p class="lead">
+          We believe engineering clarity builds trust. Here is how each component in our architecture functions, why we chose it, and how it protects your business operations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Architecture Grid -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="stack-grid">
+          <!-- Component 1 -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-navy">Interface Layer</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Web Standards &amp; Semantic HTML</span>
+            </div>
+            <h3>Website &amp; Staff App</h3>
+            <p>
+              The front-facing interfaces that customers and internal team members actually use. Engineered with semantic HTML5, modern CSS, accessible keyboard navigation, and fast-loading modular JavaScript.
+            </p>
+            <span class="use-case-label">Business Value:</span>
+            <p style="font-size: 0.88rem; color: var(--navy-800);">
+              Ensures high customer conversion on mobile devices and eliminates friction for operations staff reviewing incoming leads.
+            </p>
+          </div>
+
+          <!-- Component 2 -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-teal">Reasoning &amp; Knowledge</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Grounded Retrieval Boundaries</span>
+            </div>
+            <h3>LangChain</h3>
+            <p>
+              Governs assistant behavior, knowledge indexing, schema validation, and tool access. We use LangChain to ensure assistants only answer questions using verified, owner-approved documents.
+            </p>
+            <span class="use-case-label">Business Value:</span>
+            <p style="font-size: 0.88rem; color: var(--navy-800);">
+              Protects company reputation by preventing hallucinations, fabricated turnaround times, or unauthorized pricing commitments.
+            </p>
+          </div>
+
+          <!-- Component 3 -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-amber">Stateful Orchestration</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Multi-Step Stateful Graphs</span>
+            </div>
+            <h3>LangGraph</h3>
+            <p>
+              Provides controlled, stateful processes when workflows involve multiple sequential steps, cyclic reviews, specialist agent routing, or complex validation checkpoints.
+            </p>
+            <span class="use-case-label">Business Value:</span>
+            <p style="font-size: 0.88rem; color: var(--navy-800);">
+              Maintains reliable state memory and audit logging across complex multi-stage tasks without losing context or dropping requests.
+            </p>
+          </div>
+
+          <!-- Component 4 -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-blue">Integration Layer</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Self-Hosted / Cloud Automation</span>
+            </div>
+            <h3>n8n</h3>
+            <p>
+              Connects your website and AI workflows directly into your existing business tools (HubSpot, Notion, Slack, Airtable, Google Workspace) via structured webhooks and reliable retry policies.
+            </p>
+            <span class="use-case-label">Business Value:</span>
+            <p style="font-size: 0.88rem; color: var(--navy-800);">
+              Eliminates manual copy-pasting between systems while keeping your team inside the tools you already know and pay for.
+            </p>
+          </div>
+        </div>
+
+        <!-- Models & Tool Selection Principle -->
+        <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: var(--space-xl); margin-top: var(--space-2xl); box-shadow: var(--shadow-sm);">
+          <h3>Model &amp; Infrastructure Selection Policy</h3>
+          <p style="margin-bottom: 1rem;">
+            We do not force a single AI model provider or proprietary tool onto your business. Models (such as Anthropic Claude 3.5 Sonnet / Haiku, OpenAI GPT-4o / GPT-4o mini, or specialized open-weights models) are chosen based strictly on your latency requirements, privacy needs, and monthly token budget.
+          </p>
+          <div style="font-size: 0.88rem; color: var(--text-secondary);">
+            Every client account connects directly to their own provider API keys—ensuring you maintain direct billing, full data privacy, and zero agency markup on token usage.
+          </div>
+        </div>
+
+        <!-- Hermes Evaluation Notice -->
+        <div class="hermes-callout">
+          <div class="hermes-callout-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <div class="hermes-callout-text">
+            <h4>Technology Evaluation Notice: Hermes Agent</h4>
+            <p>
+              Hermes Agent is evaluated strictly as an open-weights autonomous agent technology for appropriate internal use cases and high-throughput research workloads. We do not imply an official commercial affiliation with its creators, nor does it power every client deployment. Model architectures are chosen based on your exact cost, security, and privacy requirements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Minimal Architecture Callout -->
+        <div class="architecture-principle">
+          "We start with the simplest architecture that meets the requirement. More agents are not automatically better."
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-2xl);">
+          <a href="contact.html" class="btn btn-primary btn-lg">Discuss Your Architecture Needs &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: var(--surface); margin-bottom: 0.75rem;">
+            <span class="brand-mark" style="background-color: var(--surface); color: var(--navy-950);">AV</span>
+            <div>
+              <span style="color: var(--surface);">AIVIBEDEV</span>
+              <span class="brand-subtext" style="color: var(--navy-400);">AI Product Studio</span>
+            </div>
+          </div>
+          <p>Full-stack AI product studio for B2B service companies. We turn websites into working parts of your business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Studio Offerings</h4>
+          <ul class="footer-links">
+            <li><a href="solutions.html#websites">AI Websites</a></li>
+            <li><a href="solutions.html#operations">Connected Operations</a></li>
+            <li><a href="solutions.html#apps">Custom AI Apps</a></li>
+            <li><a href="how-we-build.html">Technical Architecture</a></li>
+            <li><a href="interactive-demo.html">Interactive Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Transparency</h4>
+          <ul class="footer-links">
+            <li><a href="process.html">Engagement Process</a></li>
+            <li><a href="pricing.html">Pricing &amp; Scope</a></li>
+            <li><a href="proof.html">Measurement Framework</a></li>
+            <li><a href="faq.html">FAQ Directory</a></li>
+            <li><a href="privacy.html">Privacy &amp; Data Boundaries</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Inquiries</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:inquiries@aivibedev.com">inquiries@aivibedev.com</a></li>
+            <li><a href="contact.html">Workflow Scoping Form</a></li>
+            <li><a href="terms.html">Terms of Engagement</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 AIVIBEDEV AI Product Studio. All rights reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

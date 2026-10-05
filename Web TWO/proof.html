@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proof &amp; Measurement Framework | AIVIBEDEV</title>
+  <meta name="description" content="Our empirical measurement framework: How we baseline and track inquiry handling time, handoff completeness, reviewed-answer quality, exception rate, handoff rate, and operating cost.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AIVIBEDEV Home">
+        <span class="brand-mark">AV</span>
+        <div>
+          <span>AIVIBEDEV</span>
+          <span class="brand-subtext">AI Product Studio</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="interactive-demo.html" class="nav-link">Interactive Demo</a></li>
+          <li><a href="how-we-build.html" class="nav-link">How We Build</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing &amp; Scope</a></li>
+          <li><a href="proof.html" class="nav-link active">Measurement</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Discuss your workflow</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <a href="solutions.html" class="mobile-nav-link">Solutions</a>
+      <a href="interactive-demo.html" class="mobile-nav-link">Interactive Demo</a>
+      <a href="how-we-build.html" class="mobile-nav-link">How We Build</a>
+      <a href="process.html" class="mobile-nav-link">Process</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Scope</a>
+      <a href="proof.html" class="mobile-nav-link">Measurement Framework</a>
+      <a href="faq.html" class="mobile-nav-link">FAQ</a>
+      <a href="contact.html" class="btn btn-primary btn-block mt-2">Discuss your workflow</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-bottom: var(--space-xl);">
+      <div class="container container-narrow text-center">
+        <div class="eyebrow">Proof &amp; Measurement</div>
+        <h1 class="section-title">Empirical operational measurement</h1>
+        <p class="lead">
+          We do not publish fabricated client logos, unverified testimonials, or hypothetical revenue guarantees. Instead, we establish exact operational baselines and measure improvements methodically.
+        </p>
+      </div>
+    </section>
+
+    <!-- The 6 Core Metrics Section -->
+    <section class="section section-alt">
+      <div class="container">
+
+        <div class="proof-metrics-grid">
+          <!-- Metric 1 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <h3>1. Inquiry Handling Time</h3>
+            </div>
+            <p>The total duration between a prospect landing on your website with a question and receiving a verified answer or confirmed consultation slot.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Baseline manual email turnaround vs. post-launch automated triage duration.
+            </div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3>2. Handoff Completeness</h3>
+            </div>
+            <p>The percentage of incoming inquiries that arrive with all necessary scoping information (tech stack, timeline, team size, budget) before staff review.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Number of complete structured intakes vs. vague one-line form submissions.
+            </div>
+          </div>
+
+          <!-- Metric 3 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h3>3. Reviewed-Answer Quality</h3>
+            </div>
+            <p>The precision with which assistant answers match approved company documentation, verified by regular internal operations spot-checks.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Human review audit score on knowledge retrieval accuracy and citation integrity.
+            </div>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3>4. Exception Rate</h3>
+            </div>
+            <p>The rate at which unanswerable or ambiguous queries are safely routed to human staff rather than generating inaccurate answers or hallucinations.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Count of logged boundary fallbacks vs. total conversation sessions.
+            </div>
+          </div>
+
+          <!-- Metric 5 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h3>5. Customer-to-Human Handoff Rate</h3>
+            </div>
+            <p>The proportion of interactions where high-intent prospects successfully transition to a booked call or designated partner conversation.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Completed scheduling conversions relative to total qualified inquiry sessions.
+            </div>
+          </div>
+
+          <!-- Metric 6 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <h3>6. Ongoing Operating Cost</h3>
+            </div>
+            <p>Exact monthly expenditures on infrastructure, model API tokens, and database automation webhooks tracked against initial project scoping.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Monthly billing receipts from direct API providers compared against initial scoping.
+            </div>
+          </div>
+        </div>
+
+        <!-- Empirical Commitment Banner -->
+        <div class="proof-policy-banner">
+          <strong>Transparency Standard:</strong> Improvements are measured systematically across these six operational dimensions. We never guarantee generic percentage gains without establishing a formal baseline during your workflow audit.
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-2xl);">
+          <a href="contact.html" class="btn btn-primary btn-lg">Schedule a Baseline Workflow Audit &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: var(--surface); margin-bottom: 0.75rem;">
+            <span class="brand-mark" style="background-color: var(--surface); color: var(--navy-950);">AV</span>
+            <div>
+              <span style="color: var(--surface);">AIVIBEDEV</span>
+              <span class="brand-subtext" style="color: var(--navy-400);">AI Product Studio</span>
+            </div>
+          </div>
+          <p>Full-stack AI product studio for B2B service companies. We turn websites into working parts of your business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Studio Offerings</h4>
+          <ul class="footer-links">
+            <li><a href="solutions.html#websites">AI Websites</a></li>
+            <li><a href="solutions.html#operations">Connected Operations</a></li>
+            <li><a href="solutions.html#apps">Custom AI Apps</a></li>
+            <li><a href="how-we-build.html">Technical Architecture</a></li>
+            <li><a href="interactive-demo.html">Interactive Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Transparency</h4>
+          <ul class="footer-links">
+            <li><a href="process.html">Engagement Process</a></li>
+            <li><a href="pricing.html">Pricing &amp; Scope</a></li>
+            <li><a href="proof.html">Measurement Framework</a></li>
+            <li><a href="faq.html">FAQ Directory</a></li>
+            <li><a href="privacy.html">Privacy &amp; Data Boundaries</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Direct Inquiries</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:inquiries@aivibedev.com">inquiries@aivibedev.com</a></li>
+            <li><a href="contact.html">Workflow Scoping Form</a></li>
+            <li><a href="terms.html">Terms of Engagement</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 AIVIBEDEV AI Product Studio. All rights reserved.</div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

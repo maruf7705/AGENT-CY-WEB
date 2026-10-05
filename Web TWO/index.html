@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIVIBEDEV | Full-Stack AI Product Studio for B2B Service Companies</title>
+  <meta name="description" content="Turn your website into a working part of your business. We build custom websites, AI assistants, and internal apps that help service businesses answer questions, capture details, and move work through existing tools—with people in control.">
+  <meta name="keywords" content="B2B AI Studio, Connected AI Website, LangGraph B2B, n8n Workflows, Grounded AI Assistants, B2B Operations">
+
+  <!-- Typography Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION HEADER                                                         -->
+  <!-- ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AIVIBEDEV Home">
+        <span class="brand-mark">AV</span>
+        <div>
+          <span>AIVIBEDEV</span>
+          <span class="brand-subtext">AI Product Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#interactive-demo" class="nav-link">Interactive Demo</a></li>
+          <li><a href="#how-we-build" class="nav-link">How We Build</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing &amp; Scope</a></li>
+          <li><a href="#proof" class="nav-link">Measurement</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Discuss your workflow</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <a href="#solutions" class="mobile-nav-link">Solutions</a>
+      <a href="#interactive-demo" class="mobile-nav-link">Interactive Demo</a>
+      <a href="#how-we-build" class="mobile-nav-link">How We Build</a>
+      <a href="#process" class="mobile-nav-link">Process</a>
+      <a href="#pricing" class="mobile-nav-link">Pricing &amp; Scope</a>
+      <a href="#proof" class="mobile-nav-link">Measurement Framework</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#contact" class="btn btn-primary btn-block mt-2">Discuss your workflow</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========================================================================= -->
+    <!-- 1. HOME / HERO SECTION                                                    -->
+    <!-- ========================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">Full-Stack AI Product Studio for B2B Services</div>
+            <h1 class="hero-title">
+              Turn your website into a working part of your business.
+            </h1>
+            <p class="hero-lead">
+              We build custom websites, AI assistants, and internal apps that help service businesses answer questions, capture the right details, and move work through their existing tools—with people in control of important decisions.
+            </p>
+
+            <div class="hero-supporting">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Not just a chatbot. A connected experience for customers and the team behind it.</span>
+            </div>
+
+            <div class="hero-ctas">
+              <a href="#contact" class="btn btn-primary btn-lg">Discuss your workflow</a>
+              <a href="#interactive-demo" class="btn btn-secondary btn-lg">Explore an example system &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Journey Lifecycle Diagram -->
+        <div class="journey-wrapper">
+          <div class="journey-meta">
+            <span class="journey-meta-title">The Connected Experience: End-to-End Workflow Flow</span>
+            <span class="journey-meta-note">Illustrative example of an integrated B2B workflow (not an existing client result)</span>
+          </div>
+
+          <div class="journey-flow">
+            <div class="journey-step">
+              <span class="journey-step-num">Step 01</span>
+              <div class="journey-step-label">Visitor</div>
+              <div class="journey-step-desc">Arrives with a specific service question, pricing inquiry, or technical requirement.</div>
+            </div>
+
+            <div class="journey-step">
+              <span class="journey-step-num">Step 02</span>
+              <div class="journey-step-label">AI-Assisted Conversation</div>
+              <div class="journey-step-desc">Answers questions grounded strictly in owner-approved documentation with cited source notes.</div>
+            </div>
+
+            <div class="journey-step">
+              <span class="journey-step-num">Step 03</span>
+              <div class="journey-step-label">Inquiry or Booking</div>
+              <div class="journey-step-desc">Collects structured project requirements, organization details, and explicit user consent.</div>
+            </div>
+
+            <div class="journey-step">
+              <span class="journey-step-num">Step 04</span>
+              <div class="journey-step-label">Existing Tools</div>
+              <div class="journey-step-desc">Dispatches webhook payloads directly to your CRM (HubSpot, Notion, Airtable, or Slack).</div>
+            </div>
+
+            <div class="journey-step">
+              <span class="journey-step-num">Step 05</span>
+              <div class="journey-step-label">Team Review</div>
+              <div class="journey-step-desc">Operations lead reviews context, answers, and confidence score in a dedicated triage view.</div>
+            </div>
+
+            <div class="journey-step">
+              <span class="journey-step-num">Step 06</span>
+              <div class="journey-step-label">Next Step</div>
+              <div class="journey-step-desc">Human confirms follow-up: calendar invite, custom proposal, or direct partner handoff.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. SOLUTIONS SECTION                                                      -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="solutions">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Studio Solutions</div>
+          <h2 class="section-title">Built around your actual business operations</h2>
+          <p class="section-desc">
+            We provide three focused implementation tracks. Each project is scoped to your specific team requirements and existing software stack.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Service 1: AI Websites -->
+          <div class="solution-card">
+            <div>
+              <div class="solution-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3>AI Websites</h3>
+              <p>
+                Custom, responsive websites with customer-facing assistants that answer strictly from approved company information and guide qualified visitors toward an appropriate next step.
+              </p>
+              <ul class="solution-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Grounded knowledge boundaries (no hallucinations or guessing)</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Structured intake forms with visitor consent verification</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Seamless handoff to scheduling or direct partner contact</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary btn-block">Scope an AI Website &rarr;</a>
+          </div>
+
+          <!-- Service 2: Connected Operations -->
+          <div class="solution-card">
+            <div>
+              <div class="solution-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3>Connected Operations</h3>
+              <p>
+                Operational workflows that organize inbound information and connect your existing systems (HubSpot, Notion, Slack, Airtable, email), with human approval checkpoints where needed.
+              </p>
+              <ul class="solution-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Automated inquiry structuring and duplicate detection</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Two-way webhook synchronization via n8n</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Mandatory human approval steps before external dispatches</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary btn-block">Scope Operations &rarr;</a>
+          </div>
+
+          <!-- Service 3: Custom AI Apps -->
+          <div class="solution-card">
+            <div>
+              <div class="solution-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <h3>Custom AI Apps</h3>
+              <p>
+                Staff portals and internal interfaces for reviewing inquiries, finding internal information, tracking client projects, and managing edge-case exceptions without manual spreadsheet chaos.
+              </p>
+              <ul class="solution-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Unified triage and inquiry review dashboards</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Role-based internal search over private policy documentation</span>
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Exception handling views with explicit audit trails</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#contact" class="btn btn-secondary btn-block">Scope an Internal App &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Multi-Agent Engineering Policy Note -->
+        <div class="engineering-policy-box">
+          <div class="policy-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="policy-content">
+            <h4>Engineering Boundary: When Multi-Agent Workflows Are Deployed</h4>
+            <p>
+              Advanced agent and multi-agent engineering is available when a specific use case warrants it—such as multi-stage research synthesis, specialist tool routing, or asynchronous validation pipelines. It is never a required part of every package. We believe in building the simplest reliable system first: more agents are not automatically better.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. INTERACTIVE EXAMPLE (SANDBOX DEMO)                                     -->
+    <!-- ========================================================================= -->
+    <section class="section" id="interactive-demo">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Interactive Example</div>
+          <h2 class="section-title">See how a connected system actually functions</h2>
+          <p class="section-desc">
+            Explore this illustrative dual-view simulation. Watch how a fictional visitor query retrieves grounded company information, collects structured requirements, and arrives in the internal operations queue for human review.
+          </p>
+        </div>
+
+        <div class="demo-sandbox-wrapper">
+          <!-- Sandbox Top Banner -->
+          <div class="demo-banner">
+            <div class="demo-banner-label">
+              <span class="demo-banner-dot"></span>
+              <span>ILLUSTRATIVE DEMO — RUNNING LOCAL SIMULATION STATE</span>
+            </div>
+            <div>
+              <span>Fictional B2B Scenario Sandbox (No CRM tokens or live credentials consumed)</span>
+            </div>
+          </div>
+
+          <!-- Scenario Switcher -->
+          <div class="demo-scenarios">
+            <span class="demo-scenario-label">Select Business Scenario:</span>
+            <button class="scenario-btn active" data-scenario="consulting">Management Consulting (Meridian Advisory)</button>
+            <button class="scenario-btn" data-scenario="legal">Corporate Legal Advisory (Vanguard Counsel)</button>
+            <button class="scenario-btn" data-scenario="agency">Creative &amp; Growth Studio (Canvas &amp; Code)</button>
+          </div>
+
+          <!-- Dual Pane Sandbox Grid -->
+          <div class="demo-panes-grid">
+            <!-- Left: Visitor / Customer Facing Experience -->
+            <div class="demo-pane-customer">
+              <div class="demo-pane-header">
+                <span class="demo-pane-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                  Customer Perspective: On-Site Grounded Assistant
+                </span>
+                <span class="badge badge-teal">Client-Facing Interface</span>
+              </div>
+
+              <div class="demo-chat-body" id="demo-chat-body">
+                <!-- Dynamically rendered via demo-simulator.js -->
+              </div>
+
+              <div class="demo-chat-footer">
+                <button id="demo-next-step-btn" class="btn btn-primary btn-sm btn-block">Simulate Next Step &rarr;</button>
+                <button id="demo-reset-btn" class="btn btn-secondary btn-sm">Reset</button>
+              </div>
+            </div>
+
+            <!-- Right: Staff Operations & Human Review Queue -->
+            <div class="demo-pane-ops">
+              <div class="demo-pane-header">
+                <span class="demo-pane-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                  Staff Operations Perspective: Human Triage Queue
+                </span>
+                <span id="ops-status-badge" class="badge badge-navy">Awaiting Intake Submission</span>
+              </div>
+
+              <div class="demo-ops-content">
+                <div id="ops-data-view">
+                  <!-- Dynamically updated by demo-simulator.js -->
+                </div>
+
+                <div class="ops-actions-bar">
+                  <button id="ops-approve-btn" class="btn btn-teal btn-sm" style="flex: 1;">Approve &amp; Dispatch Handoff</button>
+                  <button id="ops-flag-btn" class="btn btn-secondary btn-sm" style="flex: 1;">Flag for Follow-up</button>
+                </div>
+
+                <!-- Live Audit Trail Log -->
+                <div style="margin-top: 1rem; border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 0.4rem;">
+                    System Audit Trail &amp; Decision Record:
+                  </span>
+                  <div id="demo-audit-log" style="max-height: 120px; overflow-y: auto;">
+                    <div class="audit-log-item"><span class="audit-dot"></span><span>Session initialized. Awaiting user interaction.</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. HOW WE BUILD (TECHNICAL STACK)                                         -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="how-we-build">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Architecture &amp; Stack</div>
+          <h2 class="section-title">The technology stack explained in business terms</h2>
+          <p class="section-desc">
+            We use reliable, production-tested software tools. We select components based on your team's specific business requirements rather than forcing trendy frameworks into every project.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          <!-- Stack Card 1: Website & App -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-navy">Interface Layer</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Web Standards / Responsive</span>
+            </div>
+            <h3>Website &amp; Staff App</h3>
+            <p>
+              The clean, accessible web interfaces that your customers and internal staff actually interact with. Fast-loading, fully responsive, and built for usability on mobile and desktop devices.
+            </p>
+            <span class="use-case-label">Business Function:</span>
+            <span style="font-size: 0.85rem; color: var(--navy-800);">Delivers high-conversion inquiry pages for clients and streamlined review consoles for your operations team.</span>
+          </div>
+
+          <!-- Stack Card 2: LangChain -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-teal">Reasoning &amp; Retrieval</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Grounded Knowledge</span>
+            </div>
+            <h3>LangChain</h3>
+            <p>
+              Governs assistant behavior, knowledge indexing, tool access, and retrieval boundaries. Ensures the assistant only answers using verified documentation approved by your team.
+            </p>
+            <span class="use-case-label">Business Function:</span>
+            <span style="font-size: 0.85rem; color: var(--navy-800);">Eliminates hallucinations by strictly grounding AI responses in your verified company FAQs and service matrices.</span>
+          </div>
+
+          <!-- Stack Card 3: LangGraph -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-amber">Stateful Orchestration</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Multi-Step Logic</span>
+            </div>
+            <h3>LangGraph</h3>
+            <p>
+              Provides controlled, stateful execution processes when your work involves multiple sequential steps, cyclical reviews, specialist verification components, or complex branching logic.
+            </p>
+            <span class="use-case-label">Business Function:</span>
+            <span style="font-size: 0.85rem; color: var(--navy-800);">Maintains audit logs, state memory, and predictable recovery paths across multi-stage business workflows.</span>
+          </div>
+
+          <!-- Stack Card 4: n8n -->
+          <div class="stack-card">
+            <div class="stack-badge-row">
+              <span class="badge badge-blue">Integration Layer</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Workflow Automation</span>
+            </div>
+            <h3>n8n</h3>
+            <p>
+              Connects your website and AI assistants directly to your existing operational tools—such as HubSpot, Notion, Airtable, Slack, and Google Workspace—with self-hosted privacy and reliability.
+            </p>
+            <span class="use-case-label">Business Function:</span>
+            <span style="font-size: 0.85rem; color: var(--navy-800);">Automates cross-tool synchronization without forcing your team to migrate away from existing software.</span>
+          </div>
+        </div>
+
+        <!-- Hermes Agent Callout -->
+        <div class="hermes-callout">
+          <div class="hermes-callout-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <div class="hermes-callout-text">
+            <h4>Technology Evaluation Notice: Hermes Agent</h4>
+            <p>
+              Hermes Agent is evaluated strictly as an open-weights autonomous agent technology for appropriate internal use cases and high-throughput research workloads. We do not imply an official commercial affiliation with its creators, nor does it power every client deployment. Model architectures are chosen based on your exact cost, security, and privacy requirements.
+            </p>
+          </div>
+        </div>
+
+        <!-- Minimal Architecture Principle Note -->
+        <div class="architecture-principle">
+          "We start with the simplest architecture that meets the requirement. More agents are not automatically better."
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. PROCESS SECTION                                                        -->
+    <!-- ========================================================================= -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Our Engagement Process</div>
+          <h2 class="section-title">A measured, low-risk path from audit to deployment</h2>
+          <p class="section-desc">
+            We work in structured phases so your team maintains complete visibility over scope, software permissions, operating costs, and quality benchmarks before going live.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          <!-- Stage 1 -->
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <h3>Fit Call</h3>
+            <p>A focused 20-minute discussion to review your current website, inquiry volume, and operational bottlenecks to determine whether our systems are a practical match.</p>
+            <ul class="process-deliverables">
+              <li>Workflow bottleneck review</li>
+              <li>Tool stack assessment</li>
+              <li>Go / No-go recommendation</li>
+            </ul>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <h3>Workflow Audit</h3>
+            <p>An in-depth analysis of your existing intake paths, repeat questions, manual data entry steps, and handoff points across your current tools.</p>
+            <ul class="process-deliverables">
+              <li>Process mapping diagram</li>
+              <li>Grounded knowledge inventory</li>
+              <li>Integration blueprint</li>
+            </ul>
+          </div>
+
+          <!-- Stage 3: Scoped Pilot -->
+          <div class="process-card active-pilot">
+            <div class="process-step-num">03</div>
+            <h3>Scoped Pilot</h3>
+            <p>We build and test a controlled implementation in a sandbox environment with explicit boundaries, approved knowledge, and human review gates.</p>
+            <ul class="process-deliverables">
+              <li>Custom website &amp; assistant</li>
+              <li>Webhook &amp; CRM routing</li>
+              <li>Review team onboarding</li>
+            </ul>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="process-card">
+            <div class="process-step-num">04</div>
+            <h3>Evaluation &amp; Handover</h3>
+            <p>Reviewing empirical benchmarks against baseline metrics, transferring full code ownership, and training your team to manage approved knowledge files.</p>
+            <ul class="process-deliverables">
+              <li>Full source code handover</li>
+              <li>Knowledge management guide</li>
+              <li>Operating cost audit</li>
+            </ul>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="process-card">
+            <div class="process-step-num">05</div>
+            <h3>Optional Support</h3>
+            <p>Optional ongoing advisory and workflow optimization retainers for teams that want continuous iteration as their business offerings expand.</p>
+            <ul class="process-deliverables">
+              <li>Knowledge base updates</li>
+              <li>Workflow maintenance</li>
+              <li>Monthly performance review</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Scoped Pilot Governance Boundary Box -->
+        <div class="pilot-boundary-box">
+          <h4>What Every Scoped Pilot Defines Before Public Launch:</h4>
+          <p style="font-size: 0.9rem; color: var(--teal-900);">
+            To protect your brand and operational stability, every pilot establishes six mandatory operating guardrails prior to receiving live traffic:
+          </p>
+          <div class="pilot-boundary-grid">
+            <div class="pilot-item">
+              <strong>1. Verified Knowledge Boundaries</strong>
+              Approved documentation corpus that the assistant is permitted to reference.
+            </div>
+            <div class="pilot-item">
+              <strong>2. Tool Permissions &amp; Access</strong>
+              Restricted webhook endpoints with zero write access to private financial data.
+            </div>
+            <div class="pilot-item">
+              <strong>3. Human Decision Gates</strong>
+              Clear triggers where AI pauses and hands control to designated staff.
+            </div>
+            <div class="pilot-item">
+              <strong>4. Success &amp; Quality Criteria</strong>
+              Measurable response quality standards and handoff completeness targets.
+            </div>
+            <div class="pilot-item">
+              <strong>5. Monthly Token Run Rates</strong>
+              Pre-calculated token usage budgets and hosting cost ceilings.
+            </div>
+            <div class="pilot-item">
+              <strong>6. Exception Handling Workflows</strong>
+              Structured escalation paths for unexpected queries or server timeouts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. PRICING & SCOPING SECTION                                              -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Scoping &amp; Pricing</div>
+          <h2 class="section-title">Transparent engagement packages</h2>
+          <p class="section-desc">
+            Clear starting tiers for B2B service firms. Every deployment is scoped based on your specific integrations, custom knowledge depth, and internal review requirements.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Package 1: Workflow Audit -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="pricing-package-title">Workflow Audit</div>
+              <p class="pricing-package-desc">For teams that want a diagnostic blueprint before committing to development.</p>
+            </div>
+            <div class="pricing-price-box">
+              <span class="pricing-placeholder">[AUDIT PRICE]</span>
+              <span class="pricing-price-subtext">Fixed scoping engagement fee</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complete audit of current intake &amp; inquiry channels</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Knowledge base inventory &amp; boundary mapping</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tool integration blueprint (HubSpot, Notion, Slack)</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Operating cost &amp; token budget projections</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-block">Request a Workflow Audit</a>
+          </div>
+
+          <!-- Package 2: Connected AI Website (Flagship) -->
+          <div class="pricing-card featured">
+            <div class="pricing-card-badge">Flagship Offer</div>
+            <div class="pricing-header">
+              <div class="pricing-package-title">Connected AI Website</div>
+              <p class="pricing-package-desc">Custom website, grounded assistant, structured intake, and CRM workflow synchronization.</p>
+            </div>
+            <div class="pricing-price-box">
+              <span class="pricing-placeholder">[WEBSITE STARTING PRICE]</span>
+              <span class="pricing-price-subtext">Bespoke build &amp; scoped pilot rollout</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bespoke responsive website design &amp; engineering</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Customer assistant grounded strictly in approved content</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Structured inquiry intake with visitor consent</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Webhook connections to CRM, Notion, or Slack via n8n</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Staff review interface &amp; full source code handover</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Discuss Connected Website</a>
+          </div>
+
+          <!-- Package 3: Custom AI System -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <div class="pricing-package-title">Custom AI System</div>
+              <p class="pricing-package-desc">For complex multi-step operations, specialist staff portals, and custom apps.</p>
+            </div>
+            <div class="pricing-price-box">
+              <span class="pricing-placeholder">[CUSTOM SYSTEM PRICING]</span>
+              <span class="pricing-price-subtext">Scoped based on operational complexity</span>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Custom staff portals, dashboards, &amp; exception views</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stateful multi-step LangGraph workflows when warranted</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Deep two-way integrations with proprietary internal databases</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Role-based access controls and enterprise audit logging</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-block">Scope a Custom System</a>
+          </div>
+        </div>
+
+        <!-- Clarifications and Pricing Disclaimers -->
+        <div class="pricing-disclaimers">
+          <h4>Commercial Terms &amp; Infrastructure Ownership Notes:</h4>
+          <ul>
+            <li><strong>Direct Billing:</strong> Web hosting (e.g., Vercel / Netlify at ~$20/mo) and direct AI model token usage (Anthropic / OpenAI at ~$5–$30/mo) are billed directly to your company's own accounts so you maintain permanent ownership and cost control.</li>
+            <li><strong>Custom Integrations:</strong> Deep legacy enterprise integrations or significant API modifications beyond standard webhooks are scoped individually during the workflow audit.</li>
+            <li><strong>No Unapproved Timelines:</strong> Project milestones are established collaboratively during the fit call and audit phase based on team availability and data readiness.</li>
+          </ul>
+        </div>
+
+        <!-- Interactive Operating Cost & Token Scoping Estimator -->
+        <div class="calculator-card">
+          <div class="section-header" style="margin-bottom: var(--space-lg);">
+            <div class="eyebrow">Operating Cost Estimator</div>
+            <h3 style="font-size: 1.25rem;">Calculate expected monthly infrastructure &amp; token costs</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Slide to match your anticipated monthly traffic and inquiry rate to see realistic third-party run-rates without agency markup.
+            </p>
+          </div>
+
+          <div class="calc-grid">
+            <div class="calc-inputs">
+              <div class="slider-group">
+                <label>
+                  <span>Monthly Website Visitors</span>
+                  <span id="calc-visitors-val" style="font-family: var(--font-mono); color: var(--teal-800); font-weight: 700;">5,000</span>
+                </label>
+                <input type="range" id="calc-visitors" min="500" max="50000" step="500" value="5000">
+              </div>
+
+              <div class="slider-group">
+                <label>
+                  <span>Assistant Engagement Rate</span>
+                  <span id="calc-rate-val" style="font-family: var(--font-mono); color: var(--teal-800); font-weight: 700;">4.0%</span>
+                </label>
+                <input type="range" id="calc-rate" min="1.0" max="15.0" step="0.5" value="4.0">
+              </div>
+            </div>
+
+            <div class="calc-outputs">
+              <div class="calc-row">
+                <span>Estimated Inquiries / Month:</span>
+                <strong id="calc-conversations-out" style="font-family: var(--font-mono);">200</strong>
+              </div>
+              <div class="calc-row">
+                <span>Estimated Token Volume:</span>
+                <strong id="calc-tokens-out" style="font-family: var(--font-mono);">480k tokens</strong>
+              </div>
+              <div class="calc-row">
+                <span>Model API Cost (Anthropic/OpenAI direct):</span>
+                <strong id="calc-model-cost-out" style="font-family: var(--font-mono);">$1.44 / mo</strong>
+              </div>
+              <div class="calc-row">
+                <span>Static Web &amp; Automation Hosting:</span>
+                <strong id="calc-hosting-cost-out" style="font-family: var(--font-mono);">$25.00 / mo</strong>
+              </div>
+              <div class="calc-row total">
+                <span>Estimated Monthly Run Rate:</span>
+                <strong id="calc-total-cost-out" style="font-family: var(--font-mono); color: var(--teal-800);">$26.44 / mo</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. PROOF AND MEASUREMENT                                                  -->
+    <!-- ========================================================================= -->
+    <section class="section" id="proof">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Proof &amp; Measurement</div>
+          <h2 class="section-title">Empirical metrics established before and after launch</h2>
+          <p class="section-desc">
+            We do not publish fabricated logos, unverified reviews, or hypothetical revenue guarantees. Instead, we define exact operational baselines and measure improvements methodically.
+          </p>
+        </div>
+
+        <div class="proof-metrics-grid">
+          <!-- Metric 1 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <h3>Inquiry Handling Time</h3>
+            </div>
+            <p>The time elapsed between a visitor asking a question and receiving a verified answer or scheduled consultation.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Baseline response latency vs. post-launch automated triage duration.
+            </div>
+          </div>
+
+          <!-- Metric 2 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3>Handoff Completeness</h3>
+            </div>
+            <p>The percentage of incoming leads containing all necessary scoping details (stack, team size, timeline) before staff review.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Rate of required fields populated without requiring manual back-and-forth emails.
+            </div>
+          </div>
+
+          <!-- Metric 3 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <h3>Reviewed-Answer Quality</h3>
+            </div>
+            <p>Adherence of assistant answers to approved company documentation, verified by internal operations spot-checks.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Human review score on knowledge retrieval accuracy and citation precision.
+            </div>
+          </div>
+
+          <!-- Metric 4 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <h3>Exception Rate</h3>
+            </div>
+            <p>The frequency of unanswerable or ambiguous queries that trigger safe fallback handoffs rather than hallucinations.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Logged count of boundary fallbacks vs. total conversation sessions.
+            </div>
+          </div>
+
+          <!-- Metric 5 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <h3>Customer-to-Human Handoff Rate</h3>
+            </div>
+            <p>The proportion of interactions where high-intent prospects transition smoothly to a booked call or designated partner.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Completed scheduling conversions relative to qualified inquiry sessions.
+            </div>
+          </div>
+
+          <!-- Metric 6 -->
+          <div class="proof-metric-card">
+            <div class="proof-metric-header">
+              <div class="proof-metric-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <h3>Ongoing Operating Cost</h3>
+            </div>
+            <p>Exact monthly expenditures on infrastructure, model tokens, and database webhooks monitored against project budgets.</p>
+            <div class="proof-protocol">
+              <strong>Measurement Protocol:</strong> Monthly billing receipts from direct API providers compared against initial scoping.
+            </div>
+          </div>
+        </div>
+
+        <!-- Empirical Commitment Banner -->
+        <div class="proof-policy-banner">
+          <strong>Transparency Standard:</strong> Improvements are measured systematically across these six operational dimensions. We never guarantee generic percentage gains without establishing a formal baseline during your workflow audit.
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. FAQ SECTION                                                            -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Frequently Asked Questions</div>
+          <h2 class="section-title">Straight answers on architecture, safety, and ownership</h2>
+          <p class="section-desc">
+            Everything you need to know about how our systems connect, what your team owns, and where human judgment remains in control.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Is this a chatbot or a complete system?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>It is a complete system. While a customer-facing assistant is visible on the website, it is tightly connected to your underlying business tools (like HubSpot, Notion, Slack, and Airtable) and a dedicated internal staff review interface. It answers repeat questions from approved documentation, gathers structured inquiry requirements, and brings the details directly into your team's workflow with human approval checkpoints.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Can you work with our existing website and tools?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. While we build bespoke Connected AI Websites from the ground up, we can also integrate grounded assistants, n8n webhook pipelines, and staff triage portals into your existing website (WordPress, Webflow, Next.js, etc.) and software stack. We adapt to the tools your team already uses rather than forcing you to migrate.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>Will the AI send messages or change records on its own?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. By default, our systems are built with human-in-the-loop review checkpoints. The AI assistant answers informational questions and structures inquiry data, but significant operational actions—such as dispatching proposals, charging cards, modifying master CRM records, or publishing contracts—require explicit confirmation by your team members in the staff interface.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>When do we actually need multiple agents?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Multiple agents are only deployed when a task genuinely involves distinct specialist roles, separate knowledge partitions, or complex multi-stage asynchronous validation (e.g., one agent parses legal filings while another validates financial numbers against a database). For standard customer questions and lead capture, a well-grounded single-agent architecture with structured tools is faster, more reliable, and significantly cheaper to run.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>What happens if the assistant does not know the answer?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>The assistant is strictly constrained to your owner-approved knowledge base. When asked a question outside that verified corpus, it clearly acknowledges its boundary and offers a direct inquiry form or scheduling link so a human team member can answer. It never invents policies, pricing, or turnaround times.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>What will our team own at handover?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Your team owns 100% of the deliverables: website source code, n8n workflow export files, LangGraph orchestration scripts, grounded markdown knowledge files, and documentation. Everything runs on standard web infrastructure and your own direct cloud accounts—meaning zero vendor lock-in.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button class="faq-button" aria-expanded="false">
+              <span>What costs continue after launch?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>The only ongoing costs are direct infrastructure fees paid directly to providers: static web hosting (typically $15–$25/month on Vercel/Netlify), model token consumption (typically $5–$30/month for average B2B traffic via Anthropic/OpenAI API), and any existing software subscriptions you maintain. There are no mandatory ongoing agency licensing fees unless you choose an optional retainer for continuous workflow optimization.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 9. CONTACT SECTION & SCOPING FORM                                         -->
+    <!-- ========================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column: Context & Direct Contact -->
+          <div class="contact-info">
+            <div class="eyebrow">Discuss Your Workflow</div>
+            <h2 class="section-title">Let’s examine where AI and automation make practical sense</h2>
+            <p>
+              Tell us about your service business, your existing software tools, and the specific intake or operational process you want to improve. We will review your requirements and suggest a realistic starting scope.
+            </p>
+
+            <div class="contact-direct-card">
+              <h4>Direct Inquiries:</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                Prefer email or direct correspondence? Reach our strategy team directly:
+              </p>
+              <a href="mailto:inquiries@aivibedev.com">inquiries@aivibedev.com</a>
+            </div>
+
+            <div class="contact-direct-card">
+              <h4>Direct Calendar Scheduling:</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                Schedule a 20-minute exploratory Fit Call directly on our calendar:
+              </p>
+              <a href="#contact" style="font-family: var(--font-sans); font-weight: 600; color: var(--teal-700);">Open Calendar Booking &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Right Column: Accessible Scoping Form -->
+          <div class="contact-form-card">
+            <!-- Security Notice -->
+            <div class="security-notice">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span><strong>Privacy Notice:</strong> Please do not submit passwords, API credentials, or sensitive customer PII in this form.</span>
+            </div>
+
+            <form id="workflow-contact-form">
+              <div class="form-group">
+                <label for="contact-name">Your Full Name <span class="required">*</span></label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Work Email <span class="required">*</span></label>
+                <input type="email" id="contact-email" class="form-control" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-company">Company Name <span class="required">*</span></label>
+                <input type="text" id="contact-company" class="form-control" placeholder="e.g. Morgan Advisory Partners" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-website">Company Website <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">(Optional)</span></label>
+                <input type="url" id="contact-website" class="form-control" placeholder="https://example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-tools">Current Tools in Use <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">(Optional)</span></label>
+                <input type="text" id="contact-tools" class="form-control" placeholder="e.g. HubSpot, Notion, Slack, Airtable, Google Workspace">
+                <div class="form-hint">Helps us assess integration feasibility prior to our call.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-process">Process You Want to Improve <span class="required">*</span></label>
+                <textarea id="contact-process" class="form-control" placeholder="Describe your current intake bottlenecks, repeat customer inquiries, or manual handoff steps..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg">Submit Workflow Details &rarr;</button>
+            </form>
+
+            <!-- Form Local Demo Feedback Box -->
+            <div id="form-demo-feedback" class="form-demo-feedback">
+              <span class="feedback-status-badge">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Local Build Mode Notice
+              </span>
+              <p style="font-size: 0.85rem; color: var(--navy-950); margin-bottom: 0.5rem;">
+                <strong>No live form backend is currently connected in this build.</strong> To prevent lost data, your submission has been formatted into the structured payload below. You can copy it or dispatch it directly via email:
+              </p>
+              <pre id="feedback-json-preview" class="feedback-json-preview"></pre>
+              <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem;">
+                <a id="feedback-mailto-btn" href="#" class="btn btn-teal btn-sm" style="flex: 1;">Send via Direct Email &rarr;</a>
+                <button id="feedback-copy-btn" class="btn btn-secondary btn-sm" style="flex: 1;">Copy JSON Payload</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FLOATING ON-SITE AI ASSISTANT WIDGET                                      -->
+  <!-- ========================================================================= -->
+  <div class="assistant-widget-container">
+    <!-- Trigger Button -->
+    <button id="assistant-trigger-btn" class="assistant-trigger-btn" aria-label="Open AIVIBEDEV Assistant" aria-haspopup="dialog">
+      <span class="assistant-pulse-dot"></span>
+      <span>Ask Studio Assistant</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+    </button>
+
+    <!-- Modal Window -->
+    <div id="assistant-modal" class="assistant-modal" role="dialog" aria-modal="true" aria-labelledby="assistant-title">
+      <div class="assistant-modal-header">
+        <div class="assistant-title-group">
+          <span class="brand-mark" style="width: 24px; height: 24px; font-size: 0.7rem;">AV</span>
+          <h4 id="assistant-title">AIVIBEDEV Assistant</h4>
+          <span class="assistant-badge-ai">AI Model</span>
+        </div>
+        <button id="assistant-close-btn" class="assistant-close-btn" aria-label="Close Assistant">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="assistant-grounding-notice">
+        <span>Grounded strictly in owner-approved studio documentation</span>
+      </div>
+
+      <div class="assistant-chat-log" id="assistant-chat-log">
+        <div class="chat-bubble chat-bubble-ai">
+          <div class="bubble-sender">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+            AIVIBEDEV Assistant (AI)
+          </div>
+          <p style="font-size: 0.85rem; color: var(--navy-950);">
+            Hi! I am the AIVIBEDEV studio assistant. I can answer questions about our Connected AI Websites, operations workflows, implementation process, and pricing. How can I help you today?
+          </p>
+          <div class="assistant-starter-prompts">
+            <button class="starter-chip" data-prompt="What is a Connected AI Website?">Connected AI Website?</button>
+            <button class="starter-chip" data-prompt="How does human review work?">Human Review Gates?</button>
+            <button class="starter-chip" data-prompt="What tools do you integrate with?">Supported Tools?</button>
+            <button class="starter-chip" data-prompt="What are your pricing packages?">Pricing Packages?</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="assistant-input-bar">
+        <input type="text" id="assistant-input-field" class="assistant-input-field" placeholder="Ask a question about our services...">
+        <button id="assistant-send-btn" class="btn btn-teal btn-sm" style="padding: 0.45rem 0.75rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER                                                                    -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo" style="color: var(--surface); margin-bottom: 0.75rem;">
+            <span class="brand-mark" style="background-color: var(--surface); color: var(--navy-950);">AV</span>
+            <div>
+              <span style="color: var(--surface);">AIVIBEDEV</span>
+              <span class="brand-subtext" style="color: var(--navy-400);">AI Product Studio</span>
+            </div>
+          </div>
+          <p>
+            Full-stack AI product studio for B2B service companies. We turn websites into working parts of your business with grounded assistants and human-in-the-loop workflows.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Studio Offerings</h4>
+          <ul class="footer-links">
+            <li><a href="solutions.html#websites">AI Websites</a></li>
+            <li><a href="solutions.html#operations">Connected Operations</a></li>
+            <li><a href="solutions.html#apps">Custom AI Apps</a></li>
+            <li><a href="how-we-build.html">Technical Architecture</a></li>
+            <li><a href="interactive-demo.html">Interactive Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Transparency</h4>
+          <ul class="footer-links">
+            <li><a href="process.html">Engagement Process</a></li>
+            <li><a href="pricing.html">Pricing &amp; Scope</a></li>
+            <li><a href="proof.html">Measurement Framework</a></li>
+            <li><a href="faq.html">FAQ Directory</a></li>
+            <li><a href="privacy.html">Privacy &amp; Data Boundaries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Inquiries</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:inquiries@aivibedev.com">inquiries@aivibedev.com</a></li>
+            <li><a href="contact.html">Workflow Scoping Form</a></li>
+            <li><a href="terms.html">Terms of Engagement</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 AIVIBEDEV AI Product Studio. All rights reserved. Deliverables are fully owned by clients.
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/demo-simulator.js"></script>
+  <script src="assets/js/assistant.js"></script>
+  <script src="assets/js/cost-calculator.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
