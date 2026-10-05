@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIVIBEDEV | Full-Stack AI Product Studio for B2B Service Companies</title>
+  <meta name="description" content="Turn your website into a working part of your business. We build custom websites, AI assistants, and internal apps that connect to your existing tools—with people in control.">
+  <meta name="keywords" content="B2B AI Studio, Connected AI Website, LangGraph B2B, n8n Workflows, Grounded AI Assistants, B2B Operations">
+  
+  <!-- Typography Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================= -->
+  <!-- NAVIGATION HEADER                                                         -->
+  <!-- ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AIVIBEDEV Home">
+        <span class="brand-mark">AV</span>
+        <div>
+          <span>AIVIBEDEV</span>
+          <span class="brand-subtext">AI Product Studio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#interactive-demo" class="nav-link">Interactive Demo</a></li>
+          <li><a href="#how-we-build" class="nav-link">How We Build</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#proof" class="nav-link">Measurement</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Discuss your workflow</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <a href="#solutions" class="mobile-nav-link">Solutions</a>
+      <a href="#interactive-demo" class="mobile-nav-link">Interactive Demo</a>
+      <a href="#how-we-build" class="mobile-nav-link">How We Build</a>
+      <a href="#process" class="mobile-nav-link">Process</a>
+      <a href="#pricing" class="mobile-nav-link">Pricing &amp; Scope</a>
+      <a href="#proof" class="mobile-nav-link">Measurement Framework</a>
+      <a href="#faq" class="mobile-nav-link">FAQ</a>
+      <a href="#contact" class="btn btn-primary btn-block mt-2">Discuss your workflow</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- ========================================================================= -->
+    <!-- 1. HERO SECTION                                                           -->
+    <!-- ========================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">Full-Stack AI Product Studio for B2B Services</div>
+            <h1 class="hero-title">
+              Turn your website into a working part of your business.
+            </h1>
+            <p class="hero-lead">
+              We build custom websites, AI assistants, and internal apps that help service businesses answer questions, capture the right details, and move work through their existing tools—with people in control of important decisions.
+            </p>
+            
+            <div class="hero-supporting">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <span>Not just a chatbot. A connected experience for customers and the team behind it.</span>
+            </div>
+
+            <div class="hero-ctas">
+              <a href="#contact" class="btn btn-primary btn-lg">Discuss your workflow</a>
+              <a href="#interactive-demo" class="btn btn-secondary btn-lg">Explore an example system &rarr;</a>
+            </div>
+
+            <div class="hero-audience-tag">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>
+                <strong>Built for B2B founders &amp; operations leaders</strong> at consultancies, agencies, and professional service firms whose current sites collect static forms without assisting staff workflows.
+              </span>
+            </div>
+          </div>
+
+          <!-- Visual Journey Diagram -->
+          <div class="journey-card">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <h3 style="font-size: 1.125rem;">Connected Workflow Lifecycle</h3>
+              <span class="journey-disclaimer">Illustrative Example &bull; Scoped Per Client</span>
+            </div>
+            
+            <div class="journey-steps">
+              <!-- Step 1 -->
+              <div class="journey-step">
+                <span class="step-num">Step 01</span>
+                <span class="step-title">Visitor Arrival</span>
+                <p class="step-desc">Prospect lands on your tailored site with a specific business requirement.</p>
+                <span class="step-badge badge-system">Customer</span>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="journey-step">
+                <span class="step-num">Step 02</span>
+                <span class="step-title">AI-Assisted Chat</span>
+                <p class="step-desc">Assistant answers questions strictly from verified service documentation.</p>
+                <span class="step-badge badge-ai">Grounded AI</span>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="journey-step">
+                <span class="step-num">Step 03</span>
+                <span class="step-title">Inquiry / Booking</span>
+                <p class="step-desc">Visitor consents to submit structured project scope and timeline parameters.</p>
+                <span class="step-badge badge-ai">Data Intake</span>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="journey-step">
+                <span class="step-num">Step 04</span>
+                <span class="step-title">Existing Tools</span>
+                <p class="step-desc">n8n or webhook routes sanitized data to HubSpot, Slack, or Notion.</p>
+                <span class="step-badge badge-system">Integration</span>
+              </div>
+
+              <!-- Step 5 -->
+              <div class="journey-step">
+                <span class="step-num">Step 05</span>
+                <span class="step-title">Team Review</span>
+                <p class="step-desc">Operations lead reviews drafted response and approves next step.</p>
+                <span class="step-badge badge-human">Human Oversight</span>
+              </div>
+
+              <!-- Step 6 -->
+              <div class="journey-step">
+                <span class="step-num">Step 06</span>
+                <span class="step-title">Next Step Executed</span>
+                <p class="step-desc">Personalized follow-up dispatched with complete context preserved.</p>
+                <span class="step-badge badge-human">Conversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. SOLUTIONS SECTION                                                      -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="solutions">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Studio Solutions</div>
+          <h2>Three pragmatic ways we connect AI to your business.</h2>
+          <p class="lead">
+            We don’t sell generic chatbot subscriptions or over-engineered framework experiments. We engineer reliable interfaces and workflows customized to your exact team operations.
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          
+          <!-- Solution 1: AI Websites (Flagship) -->
+          <div class="solution-card solution-flagship">
+            <div class="solution-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="solution-title">Connected AI Websites</h3>
+            <p class="solution-desc">
+              Custom websites engineered with customer-facing AI assistants that answer from approved company information, qualify inquiries, and guide visitors toward appropriate next steps.
+            </p>
+            <div class="solution-note">
+              <strong>Architectural Boundary:</strong> Scoped strictly to your approved knowledge base. Does not hallucinate or promise pricing without human approval.
+            </div>
+            <ul class="solution-features">
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bespoke, responsive, fast-loading B2B web frontend</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Strict retrieval-grounded assistant on vetted company docs</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Structured inquiry capture &amp; calendar scheduling flow</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Secure webhook handoff to existing CRM &amp; email</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-sm" style="margin-top: auto;">Discuss AI Website Scope</a>
+          </div>
+
+          <!-- Solution 2: Connected Operations -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="solution-title">Connected Operations</h3>
+            <p class="solution-desc">
+              Operational workflows that organize intake data, synchronize records across your existing software stack (HubSpot, Slack, Notion, Airtable), and enforce explicit human approval steps where judgment is required.
+            </p>
+            <div class="solution-note">
+              <strong>Architectural Boundary:</strong> Uses reliable middleware like n8n or serverless webhooks. Keeps all credentials in your direct control.
+            </div>
+            <ul class="solution-features">
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated inquiry parsing &amp; intent categorization</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Human-in-the-loop Slack or Email approval triggers</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>CRM field mapping with zero manual data re-entry</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Self-hostable or cloud-managed integration architecture</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-sm" style="margin-top: auto;">Discuss Operations Scope</a>
+          </div>
+
+          <!-- Solution 3: Custom AI Apps -->
+          <div class="solution-card">
+            <div class="solution-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="solution-title">Custom AI Apps &amp; Portals</h3>
+            <p class="solution-desc">
+              Dedicated staff portals and internal interfaces for reviewing high-volume inquiries, querying internal standard operating procedures, tracking project milestones, and managing operational exceptions.
+            </p>
+            <div class="solution-note">
+              <strong>Architectural Boundary:</strong> Engineered with stateful LangGraph or custom API layers when multi-step verification or complex workflows require it.
+            </div>
+            <ul class="solution-features">
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Custom staff triage inboxes &amp; approval dashboards</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Internal SOP retrieval &amp; verified knowledge search</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stateful multi-step reasoning workflows (LangGraph)</span>
+              </li>
+              <li class="solution-feature">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full code ownership and private hosting deployment</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-sm" style="margin-top: auto;">Discuss Custom App Scope</a>
+          </div>
+
+        </div>
+
+        <!-- Clarity Notice on Multi-Agent Systems -->
+        <div class="notice-box">
+          <div class="notice-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <div class="notice-box-content">
+            <h4>Engineering Note: Multi-Agent Systems Are Scoped, Not Assumed</h4>
+            <p>
+              We can build advanced, multi-agent workflows when a simpler design cannot adequately handle the task. However, multi-agent complexity is never presented as a benefit by itself. We start with the simplest architecture that meets the business requirement.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. INTERACTIVE EXAMPLE DEMO                                               -->
+    <!-- ========================================================================= -->
+    <section class="section" id="interactive-demo">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow eyebrow-amber">Interactive Example</div>
+          <h2>Experience the complete customer &amp; staff handoff.</h2>
+          <p class="lead">
+            Test how a fictional visitor asks service questions against approved documentation, submits a structured inquiry with consent, and how that handoff appears inside a staff triage inbox for human review.
+          </p>
+        </div>
+
+        <!-- Interactive Simulator Root (Rendered via JS) -->
+        <div id="interactive-demo-root"></div>
+
+        <div style="margin-top: 1.5rem; text-align: center;">
+          <p style="font-size: 0.8125rem; color: var(--navy-500);">
+            <strong>System Notice:</strong> The above simulator runs entirely on client-side fictional data to illustrate the architecture. It does not contact a live CRM, charge any API tokens, or represent real client communications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. HOW WE BUILD (TECH STACK & ARCHITECTURE)                               -->
+    <!-- ========================================================================= -->
+    <section class="section section-dark" id="how-we-build">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow eyebrow-dark">Architecture &amp; Engineering</div>
+          <h2>Built with proven, business-grade engineering.</h2>
+          <p class="lead" style="color: var(--navy-400);">
+            We explain technology in terms of business reliability, operational control, and long-term maintainability—not buzzwords.
+          </p>
+        </div>
+
+        <div class="stack-grid">
+          
+          <!-- Stack 1: Web Interfaces -->
+          <div class="stack-card">
+            <span class="stack-card-role">Customer &amp; Staff Touchpoints</span>
+            <h3 class="stack-card-title">Website &amp; App Interfaces</h3>
+            <p class="stack-card-desc">
+              Fast, accessible, and responsive user interfaces built with semantic HTML5, modern CSS, and lightweight JavaScript. No bloated dependencies that slow down conversion or impair mobile usability.
+            </p>
+            <div class="stack-card-rationale">
+              <strong>Business Utility:</strong> Sub-second page loads, WCAG AA accessibility compliance, and smooth interaction across all devices.
+            </div>
+          </div>
+
+          <!-- Stack 2: LangChain -->
+          <div class="stack-card">
+            <span class="stack-card-role">Agent Logic &amp; Knowledge</span>
+            <h3 class="stack-card-title">LangChain Framework</h3>
+            <p class="stack-card-desc">
+              Structured agent behavior, deterministic tool execution, and grounded knowledge retrieval (RAG) connecting the public interface strictly to verified documentation.
+            </p>
+            <div class="stack-card-rationale">
+              <strong>Business Utility:</strong> Prevents ungrounded hallucinations by enforcing strict knowledge boundaries and context grounding.
+            </div>
+          </div>
+
+          <!-- Stack 3: LangGraph -->
+          <div class="stack-card">
+            <span class="stack-card-role">Stateful Multi-Step Workflows</span>
+            <h3 class="stack-card-title">LangGraph Orchestration</h3>
+            <p class="stack-card-desc">
+              Controlled, stateful processes for complex workflows requiring multiple sequential stages, specialist sub-components, or explicit human-in-the-loop checkpoints.
+            </p>
+            <div class="stack-card-rationale">
+              <strong>Business Utility:</strong> Deterministic state recovery, audit trails, and human review gates before critical operational decisions.
+            </div>
+          </div>
+
+          <!-- Stack 4: n8n Integration -->
+          <div class="stack-card">
+            <span class="stack-card-role">Integration &amp; Middleware</span>
+            <h3 class="stack-card-title">n8n Automation</h3>
+            <p class="stack-card-desc">
+              Self-hostable or cloud-managed workflow automation connecting your website events to HubSpot, Salesforce, Slack, Notion, PostgreSQL, and existing internal APIs.
+            </p>
+            <div class="stack-card-rationale">
+              <strong>Business Utility:</strong> Visual workflow inspection, zero vendor lock-in, and full client control over API keys and sensitive credentials.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hermes Agent Evaluation Note & Principle Banner -->
+        <div class="principle-banner">
+          <div class="principle-text">
+            <h4>Technology Pragmatism: Evaluated, Never Forced</h4>
+            <p>
+              Underlying models (Claude, GPT, or local open weights) and specialized frameworks like <em>Hermes Agent</em> are evaluated strictly for appropriate internal reasoning use cases. We do not imply Hermes or any single model powers every deployment.
+            </p>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--teal-500); background-color: var(--navy-950); padding: 0.65rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--navy-800);">
+            &ldquo;We start with the simplest architecture that meets the requirement. More agents are not automatically better.&rdquo;
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. PROCESS SECTION                                                        -->
+    <!-- ========================================================================= -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Engagement Lifecycle</div>
+          <h2>A structured, predictable 5-step implementation.</h2>
+          <p class="lead">
+            Every project begins with a clear audit and a strictly scoped pilot—defining inputs, outputs, permissions, success criteria, and operating costs before any live deployment.
+          </p>
+        </div>
+
+        <div class="process-timeline">
+          
+          <!-- Step 1: Fit Call -->
+          <div class="process-step-item">
+            <div class="process-step-badge">01</div>
+            <div class="process-step-body">
+              <div class="process-step-title">
+                <span>Fit Call</span>
+                <span class="process-step-duration">30 Minutes &bull; Exploratory</span>
+              </div>
+              <p class="process-step-desc">
+                A focused conversation between our technical lead and your operations team to understand your current inquiry volume, repeat customer questions, and existing software stack. We determine whether an AI-assisted workflow is genuinely beneficial for your business.
+              </p>
+              <div style="font-size: 0.8125rem; color: var(--navy-700);">
+                <strong>Outcome:</strong> Clear determination of technical feasibility and workflow suitability.
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Workflow Audit -->
+          <div class="process-step-item">
+            <div class="process-step-badge">02</div>
+            <div class="process-step-body">
+              <div class="process-step-title">
+                <span>Workflow Audit</span>
+                <span class="process-step-duration">1 &ndash; 2 Weeks</span>
+              </div>
+              <p class="process-step-desc">
+                A thorough teardown of your customer intake paths, documentation gaps, and internal handoff friction. We map where staff spend repetitive time and identify exact boundaries for AI assistance versus human judgment.
+              </p>
+              <div style="font-size: 0.8125rem; color: var(--navy-700);">
+                <strong>Outcome:</strong> Architecture blueprint, verified knowledge corpus inventory, and fixed pilot scope document.
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Scoped Pilot -->
+          <div class="process-step-item">
+            <div class="process-step-badge">03</div>
+            <div class="process-step-body">
+              <div class="process-step-title">
+                <span>Scoped Pilot</span>
+                <span class="process-step-duration">2 &ndash; 4 Weeks</span>
+              </div>
+              <p class="process-step-desc">
+                We engineer and deploy the initial solution in a controlled staging environment. Every pilot explicitly defines its operational boundaries before launching to visitors:
+              </p>
+              
+              <!-- Pilot Criteria Grid -->
+              <div class="pilot-criteria-grid">
+                <div class="pilot-criterion">
+                  <strong>1. Verified Inputs:</strong>
+                  <span>Approved documentation &amp; structured intake fields only.</span>
+                </div>
+                <div class="pilot-criterion">
+                  <strong>2. Deterministic Outputs:</strong>
+                  <span>Grounded answers &amp; formatted triage drafts.</span>
+                </div>
+                <div class="pilot-criterion">
+                  <strong>3. Explicit Permissions:</strong>
+                  <span>Restricted API scopes; no direct database overwrites.</span>
+                </div>
+                <div class="pilot-criterion">
+                  <strong>4. Success Criteria:</strong>
+                  <span>Target answer accuracy &gt;95%; complete handoff logs.</span>
+                </div>
+                <div class="pilot-criterion">
+                  <strong>5. Operating Costs:</strong>
+                  <span>Hard monthly token &amp; hosting caps configured upfront.</span>
+                </div>
+                <div class="pilot-criterion">
+                  <strong>6. Human Review Points:</strong>
+                  <span>Mandatory approval gates for all client-facing messages.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Evaluation & Handover -->
+          <div class="process-step-item">
+            <div class="process-step-badge">04</div>
+            <div class="process-step-body">
+              <div class="process-step-title">
+                <span>Evaluation &amp; Handover</span>
+                <span class="process-step-duration">1 Week</span>
+              </div>
+              <p class="process-step-desc">
+                We evaluate pilot metrics against baseline benchmarks, test edge-case handling, conduct staff training sessions, and transfer full repository code, documentation, and credential ownership to your team.
+              </p>
+              <div style="font-size: 0.8125rem; color: var(--navy-700);">
+                <strong>Outcome:</strong> Production release, team training, full asset transfer, and runbook delivery.
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5: Optional Ongoing Support -->
+          <div class="process-step-item">
+            <div class="process-step-badge">05</div>
+            <div class="process-step-body">
+              <div class="process-step-title">
+                <span>Optional Ongoing Support</span>
+                <span class="process-step-duration">Monthly &bull; Flexible</span>
+              </div>
+              <p class="process-step-desc">
+                Periodic model updates, prompt tuning, knowledge base refreshes as your service offerings evolve, latency monitoring, and new tool integration scoping as your agency expands.
+              </p>
+              <div style="font-size: 0.8125rem; color: var(--navy-700);">
+                <strong>Outcome:</strong> Retained architectural oversight without vendor lock-in.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. PRICING & SCOPE SECTION                                                -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Transparent Scoping</div>
+          <h2>Clear packages tailored to your operational stage.</h2>
+          <p class="lead">
+            Every engagement is scoped to your exact business requirements. Below are our editable package tiers with transparent breakdowns of what is included and what remains separate.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Package 1: Workflow Audit -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Workflow Audit</h3>
+              <p class="pricing-desc">
+                Comprehensive evaluation of your intake paths, repeat customer queries, and software handoffs.
+              </p>
+              <div class="pricing-price-box">
+                <span class="pricing-placeholder">[AUDIT PRICE]</span>
+                <div class="pricing-terms">Fixed engagement &bull; 1-2 weeks</div>
+              </div>
+            </div>
+
+            <ul class="pricing-deliverables">
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Current website intake &amp; form teardown</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Approved knowledge base inventory &amp; gap analysis</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Tool integration feasibility map (HubSpot, Slack, n8n)</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fixed-scope pilot specification &amp; architecture blueprint</span>
+              </li>
+            </ul>
+
+            <div class="pricing-separate-costs">
+              <strong>Separate costs:</strong> None. Self-contained strategic deliverable.
+            </div>
+
+            <a href="#contact" class="btn btn-secondary btn-block">Book Workflow Audit</a>
+          </div>
+
+          <!-- Package 2: Connected AI Website (Featured Flagship) -->
+          <div class="pricing-card pricing-featured">
+            <span class="pricing-badge">RECOMMENDED FLAGSHIP</span>
+            <div class="pricing-header">
+              <h3 class="pricing-title">Connected AI Website</h3>
+              <p class="pricing-desc">
+                Custom website, grounded AI assistant, booking/intake path, tool integrations, and staff triage handoff.
+              </p>
+              <div class="pricing-price-box">
+                <span class="pricing-placeholder">[WEBSITE STARTING PRICE]</span>
+                <div class="pricing-terms">Scoped implementation &bull; 3-5 weeks</div>
+              </div>
+            </div>
+
+            <ul class="pricing-deliverables">
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Bespoke, high-converting B2B marketing website</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Grounded AI assistant constrained to approved docs</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Structured scoping intake &amp; calendar booking flow</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>CRM &amp; internal notification webhook connections</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Human-in-the-loop review triage workflow</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complete code repository handover &amp; staff training</span>
+              </li>
+            </ul>
+
+            <div class="pricing-separate-costs">
+              <strong>Separate costs:</strong> Web hosting ($10-30/mo), model token usage (~$5-25/mo per volume), and domain/CRM software fees.
+            </div>
+
+            <a href="#contact" class="btn btn-primary btn-block">Discuss Connected Website</a>
+          </div>
+
+          <!-- Package 3: Custom AI System -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Custom AI System</h3>
+              <p class="pricing-desc">
+                Dedicated staff portals, multi-step LangGraph reasoning engines, or complex operational automations.
+              </p>
+              <div class="pricing-price-box">
+                <span class="pricing-placeholder">[CUSTOM SYSTEM PRICING]</span>
+                <div class="pricing-terms">Custom milestone scoping</div>
+              </div>
+            </div>
+
+            <ul class="pricing-deliverables">
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Internal staff triage portal &amp; procedure search</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stateful LangGraph multi-agent or multi-step graphs</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Custom database schemas &amp; vector search pipelines</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complex bidirectional ERP / CRM integrations</span>
+              </li>
+              <li class="pricing-deliverable">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dedicated staging environment &amp; comprehensive SLA</span>
+              </li>
+            </ul>
+
+            <div class="pricing-separate-costs">
+              <strong>Separate costs:</strong> Dedicated cloud server hosting, database infrastructure, third-party API tiers, and enterprise model usage.
+            </div>
+
+            <a href="#contact" class="btn btn-secondary btn-block">Discuss Custom System</a>
+          </div>
+
+        </div>
+
+        <!-- Scope & Operating Cost Estimator Component -->
+        <div id="cost-calculator-root"></div>
+
+        <div style="margin-top: 1.5rem; text-align: center;">
+          <p style="font-size: 0.8125rem; color: var(--navy-500);">
+            *All project timelines and final quotes are agreed upon during the Workflow Audit and Pilot definition. We do not publish fixed timelines or arbitrary guarantees without reviewing your architecture requirements.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. PROOF & MEASUREMENT FRAMEWORK                                          -->
+    <!-- ========================================================================= -->
+    <section class="section" id="proof">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Empirical Verification</div>
+          <h2>How improvements are measured, not assumed.</h2>
+          <p class="lead">
+            We do not publish fabricated case studies, stock customer logos, or inflated ROI claims. Instead, we establish baseline metrics before launch and track concrete performance indicators throughout the pilot.
+          </p>
+        </div>
+
+        <div class="metrics-grid">
+          
+          <!-- Metric 1: Inquiry Handling Time -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-name">Inquiry Handling Time</span>
+              <span class="metric-tag">Efficiency</span>
+            </div>
+            <p class="metric-desc">
+              The total staff minutes required from initial visitor inquiry submission to sending a personalized, qualified response.
+            </p>
+            <div class="metric-comparison">
+              <div class="metric-col">
+                <strong>Before Pilot</strong>
+                <span>Manual triage, repetitive typing: ~25–45 min per lead</span>
+              </div>
+              <div class="metric-col">
+                <strong>After Pilot Target</strong>
+                <span>Pre-structured draft review: &lt; 5 min per lead</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric 2: Handoff Completeness -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-name">Handoff Completeness</span>
+              <span class="metric-tag">Data Quality</span>
+            </div>
+            <p class="metric-desc">
+              Percentage of inbound inquiries containing all necessary scoping details (company size, current tech stack, primary workflow objective) upon first touch.
+            </p>
+            <div class="metric-comparison">
+              <div class="metric-col">
+                <strong>Before Pilot</strong>
+                <span>Generic form fields with 40% missing context</span>
+              </div>
+              <div class="metric-col">
+                <strong>After Pilot Target</strong>
+                <span>Structured qualification capture exceeding 90%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric 3: Reviewed-Answer Quality -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-name">Reviewed-Answer Quality</span>
+              <span class="metric-tag">Accuracy</span>
+            </div>
+            <p class="metric-desc">
+              Audit score of assistant responses evaluated against owner-approved knowledge documentation for factual correctness and brand tone.
+            </p>
+            <div class="metric-comparison">
+              <div class="metric-col">
+                <strong>Before Pilot</strong>
+                <span>Unassisted or ungrounded chatbot drift risks</span>
+              </div>
+              <div class="metric-col">
+                <strong>After Pilot Target</strong>
+                <span>Strict doc retrieval with &gt;98% grounding adherence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric 4: Exception Rate -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-name">Exception Rate</span>
+              <span class="metric-tag">Reliability</span>
+            </div>
+            <p class="metric-desc">
+              Frequency of out-of-distribution queries, API timeouts, or unanswerable requests gracefully routed to human review without visitor disruption.
+            </p>
+            <div class="metric-comparison">
+              <div class="metric-col">
+                <strong>Before Pilot</strong>
+                <span>Silent dropped inquiries or generic error walls</span>
+              </div>
+              <div class="metric-col">
+                <strong>After Pilot Target</strong>
+                <span>100% of ungrounded queries captured in fallback log</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric 5: Human Handoff Rate -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-name">Customer-to-Human Rate</span>
+              <span class="metric-tag">Conversion</span>
+            </div>
+            <p class="metric-desc">
+              Percentage of qualified website conversations that successfully transition into scheduled discovery calls or approved email correspondences.
+            </p>
+            <div class="metric-comparison">
+              <div class="metric-col">
+                <strong>Before Pilot</strong>
+                <span>Static form bounce rate often exceeding 80%</span>
+              </div>
+              <div class="metric-col">
+                <strong>After Pilot Target</strong>
+                <span>Direct calendar booking &amp; transparent intake path</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Metric 6: Ongoing Operating Cost -->
+          <div class="metric-card">
+            <div class="metric-header">
+              <span class="metric-name">Ongoing Operating Cost</span>
+              <span class="metric-tag">Unit Economics</span>
+            </div>
+            <p class="metric-desc">
+              Actual monthly expenditures on LLM tokens, cloud hosting, and integration servers compared against staff time saved.
+            </p>
+            <div class="metric-comparison">
+              <div class="metric-col">
+                <strong>Before Pilot</strong>
+                <span>Expensive recurring SaaS seats with unused features</span>
+              </div>
+              <div class="metric-col">
+                <strong>After Pilot Target</strong>
+                <span>Predictable utility token billing (~$15–40/mo typical)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="notice-box" style="margin-top: 2rem;">
+          <div class="notice-box-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          </div>
+          <div class="notice-box-content">
+            <h4>Empirical Standards Notice</h4>
+            <p>
+              Performance improvements are measured empirically for each client engagement based on agreed baseline logs. AIVIBEDEV does not publish guarantees or universal percentages that have not been validated in your specific operating environment.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. FAQ SECTION                                                            -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Clear Answers</div>
+          <h2>Frequently Asked Questions</h2>
+          <p class="lead">
+            Direct, practical answers about our systems, technical boundaries, ongoing costs, and ownership.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Is this a chatbot or a complete system?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                It is a complete, connected system. A generic chatbot simply sits in a corner and outputs standalone text. Our Connected AI Websites unite a tailored marketing frontend, an assistant grounded strictly in your verified documentation, structured intake qualification, event routing through tools like n8n or webhooks, and an internal review dashboard where your staff can inspect and approve drafted responses before anything reaches a client.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Can you work with our existing website and tools?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. While we build full custom websites from scratch, we also implement modular assistants and backend operational workflows that integrate cleanly into your existing Webflow, WordPress, or custom frontend. We connect directly to your current CRM (HubSpot, Salesforce, Pipedrive), messaging tools (Slack, Teams), and databases via standard APIs and webhooks without forcing you to migrate your stack.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Will the AI send messages or change records on its own?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No critical actions occur autonomously. High-impact operations—such as sending outbound emails to clients, finalizing quotes, or updating sensitive CRM stages—pass through a human-in-the-loop approval step. The AI prepares structured drafts and summarizes visitor intent, but your team retains ultimate editorial control.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>When do we actually need multiple agents?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Only when a workflow requires distinct, specialized sub-tasks that cannot be reliably performed in a single prompt—such as independent policy verification, multi-database query synthesis, or complex stateful triage (via LangGraph). We start with the simplest architecture that meets your requirement; more agents are not automatically better.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What happens if the assistant does not know the answer?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                The assistant is strictly constrained to your approved documentation. If a visitor asks a question outside that verified scope, the assistant transparently states that it does not have that information and offers to capture the visitor's contact details so a qualified human team member can follow up accurately.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What will our team own at handover?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                You own 100% of the deliverables: all custom website code, design assets, LangChain/LangGraph orchestration scripts, n8n workflow export files, documentation runbooks, and vector store configurations. All accounts and API keys reside in your organization's direct name.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What costs continue after launch?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ongoing operational costs are direct utility expenses billed to your own provider accounts: website hosting (e.g., Vercel, Netlify, or Cloudflare at ~$10–$25/mo), LLM API token consumption (typically ~$5–$30/mo depending on traffic), and any optional automation hosting (e.g., self-hosted n8n on a ~$10–$20/mo VPS). There are no mandatory monthly agency license fees unless you retain our ongoing support retainer.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 9. CONTACT & WORKFLOW DISCUSSION                                          -->
+    <!-- ========================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-layout">
+          
+          <!-- Left Column: Context & Guidelines -->
+          <div class="contact-info-card">
+            <div class="eyebrow">Direct Contact</div>
+            <h2 style="font-size: 1.75rem; margin-bottom: 0.75rem;">Discuss your workflow with our lead engineers.</h2>
+            <p style="font-size: 0.9375rem; color: var(--navy-600); margin-bottom: 1.5rem;">
+              Tell us about the customer intake bottleneck, repeat inquiries, or software handoffs you want to improve. We’ll review your current setup and provide an honest assessment of whether an AI-assisted architecture makes business sense.
+            </p>
+
+            <ul class="contact-direct-list">
+              <li class="contact-direct-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <div>
+                  <strong>Direct Inquiries</strong>
+                  <a href="mailto:inquiries@aivibedev.com" style="color: var(--teal-700); font-weight: 600; text-decoration: none;">inquiries@aivibedev.com</a>
+                </div>
+              </li>
+              <li class="contact-direct-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <div>
+                  <strong>Response Expectation</strong>
+                  <span style="color: var(--navy-600); font-size: 0.875rem;">Structured reviews replied to within 1 business day.</span>
+                </div>
+              </li>
+              <li class="contact-direct-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <div>
+                  <strong>Human Engineering Lead</strong>
+                  <span style="color: var(--navy-600); font-size: 0.875rem;">Every scoping inquiry is evaluated by a senior engineer, not an ungrounded sales bot.</span>
+                </div>
+              </li>
+            </ul>
+
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 1.25rem; font-size: 0.8125rem; color: var(--navy-500);">
+              <strong>Alternative Booking:</strong> Prefer to book a calendar slot directly? Email us with your timezone and preferred 30-minute window.
+            </div>
+          </div>
+
+          <!-- Right Column: Accessible Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">Workflow Scoping Form</h3>
+            <p style="font-size: 0.84375rem; color: var(--navy-600); margin-bottom: 1.25rem;">
+              Provide high-level details regarding your current process.
+            </p>
+
+            <!-- Security & Confidentiality Notice -->
+            <div class="form-notice-security">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>
+                <strong>Privacy Notice:</strong> Please do NOT submit passwords, proprietary API keys, or confidential customer PII in this form.
+              </span>
+            </div>
+
+            <!-- Form Status Feedback Box (Transparently handled in JS) -->
+            <div id="form-status-box" class="form-status-box" role="status" aria-live="polite"></div>
+
+            <form id="workflow-contact-form" novalidate>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">
+                    Your Name <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Morgan" required autocomplete="name" />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">
+                    Work Email <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="alex@company.com" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="form-group">
+                  <label for="contact-company" class="form-label">
+                    Company Name <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="contact-company" class="form-control" placeholder="e.g. Acme Advisory" required autocomplete="organization" />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-website" class="form-label">
+                    Current Website <span class="optional">(Optional)</span>
+                  </label>
+                  <input type="url" id="contact-website" class="form-control" placeholder="https://company.com" autocomplete="url" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-tools" class="form-label">
+                  Current Tools &amp; Stack <span class="optional">(Optional &bull; e.g. HubSpot, Slack, Notion, WordPress)</span>
+                </label>
+                <input type="text" id="contact-tools" class="form-control" placeholder="e.g. HubSpot CRM, Slack, Google Workspace" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-process" class="form-label">
+                  Process You Want to Improve <span class="required" aria-hidden="true">*</span>
+                </label>
+                <textarea id="contact-process" class="form-control" placeholder="Describe the intake bottlenecks, repeat customer inquiries, or manual handoffs your team currently manages..." required></textarea>
+                <div class="form-help">Be as specific about your team's current friction as you'd like.</div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 0.5rem;">
+                Submit Workflow Scoping Request &rarr;
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER                                                                    -->
+  <!-- ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.75rem;">
+            <span class="brand-mark" style="width: 30px; height: 30px; font-size: 0.75rem;">AV</span>
+            <span style="font-weight: 800; font-size: 1.125rem; color: #FFFFFF;">AIVIBEDEV</span>
+          </div>
+          <p>
+            Full-stack AI product studio for B2B service companies. We build custom websites, grounded AI assistants, and connected operations systems with people in control.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.75rem; color: var(--navy-500);">
+            Primary Offer: Connected AI Website
+          </div>
+        </div>
+
+        <!-- Solutions Links -->
+        <div>
+          <h4 class="footer-col-title">Solutions</h4>
+          <ul class="footer-links">
+            <li><a href="#solutions">Connected AI Websites</a></li>
+            <li><a href="#solutions">Connected Operations</a></li>
+            <li><a href="#solutions">Custom AI Apps &amp; Portals</a></li>
+            <li><a href="#how-we-build">Engineering Stack</a></li>
+            <li><a href="#interactive-demo">Interactive Simulation</a></li>
+          </ul>
+        </div>
+
+        <!-- Framework Links -->
+        <div>
+          <h4 class="footer-col-title">Framework</h4>
+          <ul class="footer-links">
+            <li><a href="#process">5-Stage Process</a></li>
+            <li><a href="#process">Scoped Pilot Criteria</a></li>
+            <li><a href="#pricing">Pricing &amp; Scope</a></li>
+            <li><a href="#proof">Measurement Standards</a></li>
+            <li><a href="#faq">Detailed FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Legal -->
+        <div>
+          <h4 class="footer-col-title">Contact &amp; Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Discuss Workflow</a></li>
+            <li><a href="mailto:inquiries@aivibedev.com">inquiries@aivibedev.com</a></li>
+            <li><a href="#site-header">Back to Top &uarr;</a></li>
+            <li><span style="font-size: 0.75rem; color: var(--navy-500);">Owner Placeholders Active</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> AIVIBEDEV. All rights reserved.
+        </div>
+        <div>
+          Editorial B2B Standards &bull; Zero Fabricated Testimonials &bull; Human-in-the-Loop Governance
+        </div>
+      </div>
+
+      <div class="footer-disclaimer-note">
+        <strong>Disclaimer:</strong> All product names, logos, and brands mentioned (LangChain, LangGraph, n8n, HubSpot, Slack) are property of their respective owners. Mention of tools or frameworks does not imply endorsement or official affiliation. All client simulations and diagrams on this site are illustrative demonstrations.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- SCRIPTS                                                                   -->
+  <!-- ========================================================================= -->
+  <!-- Dynamic Date Helper -->
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  <!-- Main UX & Accordion -->
+  <script src="assets/js/main.js"></script>
+  <!-- Interactive Demo Simulator -->
+  <script src="assets/js/demo-simulator.js"></script>
+  <!-- Scope & Operating Cost Calculator -->
+  <script src="assets/js/cost-calculator.js"></script>
+  <!-- Grounded AI Assistant Widget -->
+  <script src="assets/js/assistant.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Demo | AIVIBEDEV - Customer &amp; Staff Triage Simulation</title>
+  <meta name="description" content="Experience an interactive demonstration of a Connected AI Website: visitor inquiry, grounded documentation retrieval, structured intake, and operations team triage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AIVIBEDEV Home">
+        <span class="brand-mark">AV</span>
+        <div>
+          <span>AIVIBEDEV</span>
+          <span class="brand-subtext">AI Product Studio</span>
+        </div>
+      </a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="interactive-demo.html" class="nav-link active">Interactive Demo</a></li>
+          <li><a href="how-we-build.html" class="nav-link">How We Build</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="proof.html" class="nav-link">Measurement</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Discuss your workflow</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <a href="solutions.html" class="mobile-nav-link">Solutions</a>
+      <a href="interactive-demo.html" class="mobile-nav-link active">Interactive Demo</a>
+      <a href="how-we-build.html" class="mobile-nav-link">How We Build</a>
+      <a href="process.html" class="mobile-nav-link">Process</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Scope</a>
+      <a href="proof.html" class="mobile-nav-link">Measurement Framework</a>
+      <a href="faq.html" class="mobile-nav-link">FAQ</a>
+      <a href="contact.html" class="btn btn-primary btn-block mt-2">Discuss your workflow</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-alt" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl);">
+      <div class="container container-narrow text-center">
+        <div class="eyebrow eyebrow-amber">Studio Sandbox</div>
+        <h1>Interactive System Simulation</h1>
+        <p class="lead mt-2">
+          Experience both sides of a Connected AI Website: the visitor qualification experience on the left, and the internal operations team review triage on the right.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        
+        <!-- Demonstration Root -->
+        <div id="interactive-demo-root"></div>
+
+        <!-- Explanatory Architecture Diagram Below Demo -->
+        <div style="margin-top: 3rem; background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.25rem;">
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">How This Flow Operates in Production</h3>
+          <p style="font-size: 0.9375rem; color: var(--navy-600); margin-bottom: 1.5rem;">
+            When deployed for your business, this simulation is connected directly to your approved knowledge base and existing operations software:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+            <div style="background-color: var(--bg-primary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <strong style="color: var(--teal-800); font-size: 0.875rem; display: block; margin-bottom: 0.25rem;">1. Knowledge Grounding</strong>
+              <p style="font-size: 0.8125rem; margin: 0; color: var(--navy-700);">
+                Vector embeddings of your approved PDFs, service guidelines, and pricing tiers ensure the assistant never invents unapproved offers.
+              </p>
+            </div>
+            <div style="background-color: var(--bg-primary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <strong style="color: var(--teal-800); font-size: 0.875rem; display: block; margin-bottom: 0.25rem;">2. Webhook Dispatch</strong>
+              <p style="font-size: 0.8125rem; margin: 0; color: var(--navy-700);">
+                When a visitor submits an inquiry, an n8n webhook securely structures the contact, logs explicit consent, and formats a triage card.
+              </p>
+            </div>
+            <div style="background-color: var(--bg-primary); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+              <strong style="color: var(--teal-800); font-size: 0.875rem; display: block; margin-bottom: 0.25rem;">3. Human Approval Gate</strong>
+              <p style="font-size: 0.8125rem; margin: 0; color: var(--navy-700);">
+                Your operations lead reviews the AI-generated draft in Slack or an internal portal. One click dispatches the tailored proposal.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="contact.html" class="btn btn-primary btn-lg">Discuss Implementing This For Your Agency &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 AIVIBEDEV. All rights reserved.</div>
+        <div><a href="index.html" style="color: var(--teal-500); text-decoration: none;">&larr; Return to Homepage</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/demo-simulator.js"></script>
+  <script src="assets/js/assistant.js"></script>
+</body>
+</html>

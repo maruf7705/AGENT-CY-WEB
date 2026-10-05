@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Build | AIVIBEDEV - B2B AI Architecture &amp; Stack</title>
+  <meta name="description" content="Our pragmatic technology stack: LangChain, LangGraph, n8n, modern web interfaces, and grounded retrieval. Explained in business language.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="AIVIBEDEV Home">
+        <span class="brand-mark">AV</span>
+        <div>
+          <span>AIVIBEDEV</span>
+          <span class="brand-subtext">AI Product Studio</span>
+        </div>
+      </a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="interactive-demo.html" class="nav-link">Interactive Demo</a></li>
+          <li><a href="how-we-build.html" class="nav-link active">How We Build</a></li>
+          <li><a href="process.html" class="nav-link">Process</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="proof.html" class="nav-link">Measurement</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Discuss your workflow</a>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <a href="solutions.html" class="mobile-nav-link">Solutions</a>
+      <a href="interactive-demo.html" class="mobile-nav-link">Interactive Demo</a>
+      <a href="how-we-build.html" class="mobile-nav-link active">How We Build</a>
+      <a href="process.html" class="mobile-nav-link">Process</a>
+      <a href="pricing.html" class="mobile-nav-link">Pricing &amp; Scope</a>
+      <a href="proof.html" class="mobile-nav-link">Measurement Framework</a>
+      <a href="faq.html" class="mobile-nav-link">FAQ</a>
+      <a href="contact.html" class="btn btn-primary btn-block mt-2">Discuss your workflow</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section Header -->
+    <section class="section section-dark" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl);">
+      <div class="container container-narrow text-center">
+        <div class="eyebrow eyebrow-dark">Architecture &amp; Engineering</div>
+        <h1>How We Build: The Stack in Business Language</h1>
+        <p class="lead" style="color: var(--navy-400); margin-top: 1rem;">
+          We select engineering tools for reliability, security, inspectability, and ease of handover—not for marketing hype.
+        </p>
+      </div>
+    </section>
+
+    <!-- Deep Breakdown of the 5 Layers -->
+    <section class="section">
+      <div class="container">
+        
+        <div style="display: flex; flex-direction: column; gap: 3rem; max-width: 920px; margin: 0 auto;">
+          
+          <!-- Layer 1: Frontends -->
+          <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+            <div class="eyebrow">Layer 01 &bull; Touchpoints</div>
+            <h2>Website &amp; App Interfaces</h2>
+            <p class="lead">The fast, intuitive interfaces your visitors and internal staff interact with every day.</p>
+            <p>
+              We build client-facing websites and internal operations portals using clean, semantic web standards (HTML5, responsive CSS, lightweight JavaScript, or modern React frameworks when application state demands it). We prioritize sub-second load times, mobile ergonomics, readable typography, and strict WCAG AA accessibility compliance.
+            </p>
+            <div style="background-color: var(--bg-secondary); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.84375rem;">
+              <strong>Why it matters to your business:</strong> High-friction or slow websites cause qualified buyers to bounce before asking a question. Our frontends load instantly and guide buyers effortlessly into a conversation.
+            </div>
+          </div>
+
+          <!-- Layer 2: LangChain -->
+          <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+            <div class="eyebrow">Layer 02 &bull; Reasoning &amp; Knowledge</div>
+            <h2>LangChain: Controlled Agent Behavior &amp; Retrieval</h2>
+            <p class="lead">Grounded knowledge retrieval that prevents unapproved statements and hallucinated pricing.</p>
+            <p>
+              LangChain provides the scaffolding for structuring prompts, formatting tool inputs, and executing Retrieval-Augmented Generation (RAG). By grounding your assistant in verified vector embeddings of your service handbook, pricing sheets, and policies, the model can only answer from owner-approved facts.
+            </p>
+            <div style="background-color: var(--bg-secondary); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.84375rem;">
+              <strong>Why it matters to your business:</strong> Brand safety. If a visitor asks an unanswerable question or attempts prompt injection, LangChain enforces strict retrieval fences and falls back to a polite human handoff.
+            </div>
+          </div>
+
+          <!-- Layer 3: LangGraph -->
+          <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+            <div class="eyebrow">Layer 03 &bull; Stateful Multi-Step Control</div>
+            <h2>LangGraph: Controlled, Cyclical Workflows</h2>
+            <p class="lead">Deterministic state machines for complex tasks requiring multi-step verification and human pauses.</p>
+            <p>
+              When a business process has multiple sequential dependencies—such as parsing an RFP document, checking internal consultant capacity, querying a CRM, and generating a proposal draft—standard linear prompts fail. LangGraph allows us to build stateful graphs with memory, cyclical error-checking loops, and mandatory human checkpoints.
+            </p>
+            <div style="background-color: var(--bg-secondary); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.84375rem;">
+              <strong>Why it matters to your business:</strong> Total auditability. Every state transition is recorded in persistent logs, allowing your team to pause, inspect, and approve tasks before they execute.
+            </div>
+          </div>
+
+          <!-- Layer 4: n8n -->
+          <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+            <div class="eyebrow">Layer 04 &bull; Integrations &amp; Middleware</div>
+            <h2>n8n: Transparent Workflow Automation</h2>
+            <p class="lead">Connects website interactions directly to your existing business stack without vendor lock-in.</p>
+            <p>
+              n8n is an enterprise-grade, node-based workflow engine that can be self-hosted on a low-cost private server or run via managed cloud. We use n8n to connect website events to your CRM (HubSpot, Salesforce), team communication (Slack, Teams), project tracking (Notion, ClickUp), and custom databases.
+            </p>
+            <div style="background-color: var(--bg-secondary); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.84375rem;">
+              <strong>Why it matters to your business:</strong> No SaaS lock-in and zero per-seat fees for your operational team. Your data stays on your infrastructure, and you have complete visual visibility into every webhook.
+            </div>
+          </div>
+
+          <!-- Layer 5: Models & Hermes Agent Note -->
+          <div style="background-color: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; box-shadow: var(--shadow-sm);">
+            <div class="eyebrow">Layer 05 &bull; Model Selection &amp; Internal Research</div>
+            <h2>Pragmatic Model Selection</h2>
+            <p class="lead">Selecting the right LLM for latency, accuracy, and cost—never forcing a single provider.</p>
+            <p>
+              We benchmark across leading providers—including Anthropic Claude 3.5 Sonnet, OpenAI GPT-4o / GPT-4o-mini, and open-weights models (Llama 3, Mistral)—to choose the most cost-effective and accurate model for each sub-task. Fast, small models handle qualification and metadata extraction; deep reasoning models handle complex synthesis.
+            </p>
+            
+            <div class="notice-box" style="margin-top: 1.5rem; background: var(--bg-primary);">
+              <div class="notice-box-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+              </div>
+              <div class="notice-box-content">
+                <h4 style="font-size: 0.875rem;">Evaluation Note on Hermes Agent:</h4>
+                <p style="font-size: 0.8125rem;">
+                  <em>Hermes Agent</em> is evaluated as an emerging technology for specific internal reasoning and open-weights automation use cases. AIVIBEDEV maintains no formal commercial affiliation with Hermes, and we do not claim it powers every deployment. We deploy it only where benchmarked performance proves superior for your specific workflow.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Architectural Philosophy Callout -->
+          <div class="principle-banner" style="margin-top: 1rem;">
+            <div class="principle-text">
+              <h3 style="color: #FFFFFF; font-size: 1.25rem;">Our Core Architecture Rule</h3>
+              <p style="font-size: 0.9375rem;">
+                &ldquo;We start with the simplest architecture that meets the requirement. More agents are not automatically better.&rdquo;
+              </p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Discuss Your Architecture &rarr;</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 AIVIBEDEV. All rights reserved.</div>
+        <div><a href="index.html" style="color: var(--teal-500); text-decoration: none;">&larr; Return to Homepage</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/assistant.js"></script>
+</body>
+</html>
