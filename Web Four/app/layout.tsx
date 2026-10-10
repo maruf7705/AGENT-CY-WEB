@@ -1,16 +1,25 @@
 import type { Metadata } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Outfit, Plus_Jakarta_Sans, Syne } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-outfit',
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
   display: 'swap',
 });
 
-const spaceGrotesk = Space_Grotesk({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-display',
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+});
+
+const syne = Syne({
+  subsets: ['latin'],
+  variable: '--font-syne',
+  weight: ['500', '600', '700', '800'],
   display: 'swap',
 });
 
@@ -26,8 +35,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} dark`}>
-      <body className="font-sans antialiased bg-[#06070a] text-white selection:bg-purple-500/30 selection:text-purple-200">
+    <html lang="en" className={`${outfit.variable} ${plusJakarta.variable} ${syne.variable} dark scroll-smooth`}>
+      <head>
+        {/* Direct Google Fonts Links for immediate high-aesthetic typography & glowing reliability */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="font-sans antialiased bg-[#06070a] text-white selection:bg-purple-600/30 selection:text-purple-200">
         {children}
       </body>
     </html>

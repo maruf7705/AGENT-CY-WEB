@@ -1,16 +1,18 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import AtmosphericShadow from '@/components/AtmosphericShadow';
+import CharacterReveal from '@/components/CharacterReveal';
 import HeroContent from '@/components/HeroContent';
 import RightIndicator from '@/components/RightIndicator';
 import ScrollIndicator from '@/components/ScrollIndicator';
 import PortfolioModal from '@/components/PortfolioModal';
-import { Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { Volume2, VolumeX } from 'lucide-react';
 
 export default function Home() {
+  const mainRef = useRef<HTMLElement>(null);
   const [activeModal, setActiveModal] = useState<'Work' | 'About' | 'Contact' | null>(null);
   const [activeSection, setActiveSection] = useState('Home');
   const [soundActive, setSoundActive] = useState(false);
@@ -25,17 +27,19 @@ export default function Home() {
   };
 
   const handleScrollClick = () => {
-    // When clicking scroll, open work modal or smooth scroll
     setActiveModal('Work');
   };
 
   return (
-    <main className="relative w-full h-[100dvh] min-h-[640px] overflow-hidden select-none bg-[#06070a]">
-      {/* 1. Preserved Background Image (Exact character, rainbow, flowers, lighting untouched) */}
+    <main
+      ref={mainRef}
+      className="relative w-full h-[100dvh] min-h-[640px] overflow-hidden select-none bg-[#06070a]"
+    >
+      {/* 1. Base Hero Background Image (BG_IMAGEs_1) */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
         <Image
-          src="/hero-bg.jpg"
-          alt="Miladicode - Where Creativity Meets Technology cinematic artwork"
+          src="/BG_IMAGEs_1.jpg"
+          alt="Miladicode - Where Creativity Meets Technology base artwork"
           fill
           priority
           sizes="100vw"
@@ -44,16 +48,19 @@ export default function Home() {
         />
       </div>
 
-      {/* 2. Soft Dark Atmospheric Gradient/Shadow (Feathered, subtle, fading toward center) */}
+      {/* 2. Cursor-Following Character Reveal Spotlight (BG_IMAGEs_2) */}
+      <CharacterReveal containerRef={mainRef} />
+
+      {/* 3. Soft Dark Atmospheric Gradient/Shadow (Feathered, subtle, fading toward center) */}
       <AtmosphericShadow />
 
-      {/* 3. Top Navigation (Minimal MILADICODE Logo & Home/Work/About/Contact) */}
+      {/* 4. Top Navigation (Minimal MILADICODE Logo & Home/Work/About/Contact) */}
       <Navbar
         activeSection={activeSection}
         onNavigate={handleNavigate}
       />
 
-      {/* 4. Left-Side Main Content Area */}
+      {/* 5. Left-Side Main Content Area */}
       <div className="relative z-20 w-full h-full flex items-center px-6 sm:px-10 md:px-16 lg:px-20 xl:px-24">
         <div className="pt-8 sm:pt-4 max-w-2xl lg:max-w-3xl">
           <HeroContent
@@ -62,17 +69,17 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 5. Right-Side Small Vertical Indicator (AI / 3D / MOTION / WEB) */}
+      {/* 6. Right-Side Small Vertical Indicator (AI / 3D / MOTION / WEB) */}
       <RightIndicator />
 
-      {/* 6. Bottom-Left "SCROLL TO EXPLORE" Indicator */}
+      {/* 7. Bottom-Left "SCROLL TO EXPLORE" Indicator */}
       <ScrollIndicator onScrollClick={handleScrollClick} />
 
-      {/* 7. Bottom-Right Subtle Ambient Sound / Status Pill */}
+      {/* 8. Bottom-Right Subtle Ambient Sound / Status Pill */}
       <div className="fixed bottom-6 sm:bottom-10 right-6 sm:right-10 md:right-14 z-30 flex items-center gap-3">
         <button
           onClick={() => setSoundActive(!soundActive)}
-          className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.09] border border-white/10 backdrop-blur-md text-zinc-400 hover:text-white transition-all text-[11px] font-mono tracking-wider"
+          className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.09] border border-white/10 backdrop-blur-md text-zinc-400 hover:text-white transition-all text-[11px] font-mono tracking-wider cursor-pointer"
           title="Toggle Ambient Audio Experience"
           aria-label="Toggle Ambient Audio"
         >
@@ -90,7 +97,7 @@ export default function Home() {
         </button>
       </div>
 
-      {/* 8. Interactive Modals for Work, About, and Contact */}
+      {/* 9. Interactive Modals for Work, About, and Contact */}
       <PortfolioModal
         isOpen={activeModal !== null}
         type={activeModal}
